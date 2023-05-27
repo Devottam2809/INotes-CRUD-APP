@@ -1,0 +1,9 @@
+INSERT INTO `notes` (`Entry No`, `Title`, `Description`, `Entry Time`) VALUES ('1', 'Testing My code', 'Hello everyone this is my CRUD APP.\r\nI\'ll soon be posting it on my github....\r\nHAPPY CODING :)', '2023-05-27 10:33:40.000000');
+
+if(!$conn)
+    die("failed to connect".mysqli_connect_error());
+  else  
+    echo "connection done";
+
+
+INSERT INTO `notes` (`Entry No`, `Title`, `Description`, `Entry Time`) VALUES (NULL, 'Testing My code 3', 'Happy Coding dude :)', current_timestamp());
